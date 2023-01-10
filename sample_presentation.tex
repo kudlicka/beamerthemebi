@@ -1,0 +1,84 @@
+% !TEX TS-program = XeLaTeX
+% !TEX spellcheck = en-US
+\documentclass[aspectratio=169]{beamer}
+
+\usetheme{bi}
+
+\title{Sample Beamer Presentation}
+\subtitle{Using the BI Theme}
+\author{Jan Kudlicka}
+\institute{BI Norwegian Business School}
+% Use \date{...} if you do not want to use today's date.
+
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}{Frame title}
+A paragraph with some text.
+
+Another paragraph followed by a list.
+
+\begin{enumerate}
+\item Item
+\begin{itemize}
+\item{Subitem}
+\item{Subitem}
+\item{Subitem}
+\end{itemize}
+\item Item
+\item Item
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Colors in the BI theme}
+The \alert{BI theme} has defined the following colors you can use in your presentations:
+
+\begin{columns}[t]
+\column{.4\textwidth}
+\begin{block}{Primary palette}
+\begin{itemize}
+\item \textcolor{DarkestBlue}{DarkestBlue}
+\item \textcolor{DarkBlue}{DarkBlue}
+\item \textcolor{MediumBlue}{MediumBlue}
+\item \textcolor{AccentBlue}{AccentBlue}
+\item \textcolor{LightBlue}{LightBlue}
+\item White
+\end{itemize}
+\end{block}
+\column{.4\textwidth}
+\begin{block}{Secondary palette}
+\begin{itemize}
+\item \textcolor{Gold}{Gold}
+\item \textcolor{AccentYellow}{AccentYellow}
+\item \textcolor{LightBrown}{LightBrown}
+\item \textcolor{LightGrey}{LightGrey}
+\item \textcolor{Lighter}{Lighter}
+\item \textcolor{AlmostWhite}{AlmostWhite}
+\end{itemize}
+\end{block}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Let's use some math!}
+Let
+\begin{align*}
+X &\sim \mathcal{N}(\mu_1, \sigma^2_1), \\
+Y &\sim \mathcal{N}(\mu_2, \sigma^2_2).
+\end{align*}
+
+Then $X + Y$ is also normally distributed and
+$$ X + Y \sim \mathcal{N}(\mu_1 + \mu_2, \sigma^2_1 + \sigma^2_2). $$
+\end{frame}
+
+
+\begin{frame}
+\centering
+\Huge
+Thanks for your attention!
+\end{frame}
+
+\end{document}
